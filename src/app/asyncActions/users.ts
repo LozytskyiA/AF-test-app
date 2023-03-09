@@ -1,5 +1,5 @@
-import {ThunkAction} from 'redux-thunk';
 import {AnyAction} from 'redux';
+import {ThunkAction} from 'redux-thunk';
 import {createAsyncAction} from 'typesafe-actions';
 
 import {fetchUsers, TUsers} from '../API';

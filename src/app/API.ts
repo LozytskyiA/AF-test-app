@@ -17,7 +17,7 @@ export function fetchUsers() {
 }
 
 export function fetchUser(userId: number) {
-    return new Promise<{data: TUser | null}>(resolve =>
-        setTimeout(() => resolve({data: JSONUsers.find(item => item.id === userId) || null}), 1000),
+    return new Promise<{data: TUser}>(resolve =>
+        setTimeout(() => resolve({data: JSONUsers.find(item => item.id === userId) as TUser}), 1000),
     );
 }
